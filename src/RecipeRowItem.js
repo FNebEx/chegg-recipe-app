@@ -1,9 +1,15 @@
 /**
+ * @typedef {Object} Props
+ * @property {Object[]} item - An object that contains information on a single item. 
+ * @property {Function} onDelete - A function that will delete the current item when displayed.
+ */
+
+/**
  * A component that returns a single 
  * row in a table based on properties passed 
  * down from the "item" prop.
- * @param {object} props two items: item, onDelete.
- * @returns 
+ * @param {Props} props
+ * @returns A singlular table row.  
  */
 
 function RecpieRowItem({ item, onDelete }) {
